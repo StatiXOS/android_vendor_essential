@@ -19,15 +19,15 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/libclcore_debug.bc:system/lib64/libclcore_debug.bc \
     vendor/essential/mata/proprietary/lib64/libclcore_debug_g.bc:system/lib64/libclcore_debug_g.bc \
     vendor/essential/mata/proprietary/lib64/libclcore_g.bc:system/lib64/libclcore_g.bc \
-	vendor/essential/mata/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-	vendor/essential/mata/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
-	vendor/essential/mata/proprietary/etc/sysconfig/pixel_2017.xml:system/etc/sysconfig/pixel_2017.xml \
+    vendor/essential/mata/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
+    vendor/essential/mata/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
+    vendor/essential/mata/proprietary/etc/sysconfig/pixel_2017.xml:system/etc/sysconfig/pixel_2017.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
-	vendor/essential/mata/proprietary/etc/permissions/com.google.android.camera.experimental2017.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml \
+    vendor/essential/mata/proprietary/etc/permissions/com.google.android.camera.experimental2017.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/framework-sysconfig.xml:system/etc/sysconfig/framework-sysconfig.xml \
     vendor/essential/mata/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
-	vendor/essential/mata/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:system/etc/permissions/com.android.sdm.plugins.connmo.xml \
-	vendor/essential/mata/proprietary/etc/permissions/com.android.vzwomatrigger.xml:system/etc/permissions/com.android.vzwomatrigger.xml \
+    vendor/essential/mata/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:system/etc/permissions/com.android.sdm.plugins.connmo.xml \
+    vendor/essential/mata/proprietary/etc/permissions/com.android.vzwomatrigger.xml:system/etc/permissions/com.android.vzwomatrigger.xml \
     vendor/essential/mata/proprietary/vendor/app/Score/lib/arm64/libCxAudioHidLib.so:$(TARGET_COPY_OUT_VENDOR)/app/Score/lib/arm64/libCxAudioHidLib.so \
     vendor/essential/mata/proprietary/vendor/app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so:$(TARGET_COPY_OUT_VENDOR)/app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so \
     vendor/essential/mata/proprietary/vendor/app/Score/lib/arm64/libusb1.0.so:$(TARGET_COPY_OUT_VENDOR)/app/Score/lib/arm64/libusb1.0.so \
@@ -849,13 +849,15 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@1.0_vendor.so \
-    vendor/essential/mata/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
+    vendor/essential/mata/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
+    vendor/essential/mata/proprietary/etc/permissions/privapp-permissions-platform.xml:system/etc/privapp-permissions-platform.xml \
+    vendor/essential/mata/proprietary/etc/permissions/privapp-permissions-mata.xml:system/etc/privapp-permissions-mata.xml
 
 PRODUCT_PACKAGES += \
-	com.google.android.camera.experimental2017 \
-	ConnMO \
-	VzwOmaTrigger \
-	CarrierServices \
+    com.google.android.camera.experimental2017 \
+    ConnMO \
+    VzwOmaTrigger \
+    CarrierServices \
     libgpustats \
     libsdm-disp-vndapis \
     embms \

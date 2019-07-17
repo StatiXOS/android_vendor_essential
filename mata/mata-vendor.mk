@@ -85,6 +85,11 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
     vendor/essential/mata/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/essential/mata/proprietary/vendor/lib64/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrueportrait.so \
+    vendor/essential/mata/proprietary/lib64/libsparse.so:system/lib64/libsparse.so \
+    vendor/essential/mata/proprietary/vendor/lib64/libkeyutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeyutils.so \
+    vendor/essential/mata/proprietary/vendor/lib64/libext4_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libext4_utils.so \
+    vendor/essential/mata/proprietary/vendor/lib64/liblogwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblogwrap.so \
+    vendor/essential/mata/proprietary/vendor/lib64/libext2_uuid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libext2_uuid.so \
     vendor/essential/mata/proprietary/lib64/libubifocus.so:system/lib64/libubifocus.so \
     vendor/essential/mata/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/essential/mata/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \

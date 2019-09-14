@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/app/Score/lib/arm64/libCxAudioHidLib.so:$(TARGET_COPY_OUT_VENDOR)/app/Score/lib/arm64/libCxAudioHidLib.so \
     vendor/essential/mata/proprietary/vendor/app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so:$(TARGET_COPY_OUT_VENDOR)/app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so \
     vendor/essential/mata/proprietary/vendor/app/Score/lib/arm64/libusb1.0.so:$(TARGET_COPY_OUT_VENDOR)/app/Score/lib/arm64/libusb1.0.so \
-    vendor/essential/mata/proprietary/vendor/bin/fastboot:$(TARGET_COPY_OUT_VENDOR)/bin/fastboot \
+    vendor/essential/mata/proprietary/bin/fastboot_target:system/bin/fastboot_target \
     vendor/essential/mata/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/essential/mata/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/essential/mata/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \

@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 The LineageOS Project
+ * Copyright (C) 2019-2020 StatiXOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,58 +22,17 @@ soong_namespace {
 android_app_import {
 	name: "Score",
 	owner: "essential",
-	apk: "proprietary/app/Score/Score.apk",
+	apk: "proprietary/system/app/Score/Score.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "embms",
-	owner: "essential",
-	apk: "proprietary/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "ims",
-	owner: "essential",
-	apk: "proprietary/app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uceShimService",
-	owner: "essential",
-	apk: "proprietary/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "CNEService",
-	owner: "essential",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 }
 
 android_app_import {
 	name: "HotwordEnrollmentOKGoogleWCD9335",
 	owner: "essential",
-	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk",
+	apk: "proprietary/system/priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -84,7 +43,7 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentTGoogleWCD9335",
 	owner: "essential",
-	apk: "proprietary/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk",
+	apk: "proprietary/system/priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -95,7 +54,7 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentXGoogleWCD9335",
 	owner: "essential",
-	apk: "proprietary/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk",
+	apk: "proprietary/system/priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -106,7 +65,7 @@ android_app_import {
 android_app_import {
 	name: "Klik",
 	owner: "essential",
-	apk: "proprietary/priv-app/Klik/Klik.apk",
+	apk: "proprietary/system/priv-app/Klik/Klik.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -115,12 +74,59 @@ android_app_import {
 }
 
 android_app_import {
-	name: "qcrilmsgtunnel",
+	name: "CneApp",
 	owner: "essential",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "embms",
+	owner: "essential",
+	apk: "proprietary/product/app/embms/embms.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uceShimService",
+	owner: "essential",
+	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ims",
+	owner: "essential",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	product_specific: true,
 }
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "essential",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+

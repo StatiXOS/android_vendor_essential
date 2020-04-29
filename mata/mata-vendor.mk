@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/libubifocus.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libubifocus.so \
     vendor/essential/mata/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/essential/mata/proprietary/product/framework/vendor.essential.hardware.sidecar-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.essential.hardware.sidecar-V1.0-java.jar \
-    vendor/essential/mata/proprietary/vendor_overlay/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/bin/imsrcsd \
     vendor/essential/mata/proprietary/vendor_overlay/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/bin/hw/vendor.qti.hardware.perf@1.0-service \
     vendor/essential/mata/proprietary/vendor_overlay/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/essential/mata/proprietary/vendor_overlay/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/perf/commonresourceconfigs.xml \
@@ -99,8 +98,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor_overlay/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/perf/targetresourceconfigs.xml \
     vendor/essential/mata/proprietary/vendor_overlay/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/powerhint.xml \
     vendor/essential/mata/proprietary/vendor_overlay/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/hw/vendor.qti.hardware.iop@2.0-impl.so \
-    vendor/essential/mata/proprietary/vendor_overlay/lib/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/lib-imsrcs-v2.so \
-    vendor/essential/mata/proprietary/vendor_overlay/lib/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/lib-uceservice.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libperfgluelayer.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-iopd-client.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/libqti-perfd-client.so \
@@ -112,8 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor_overlay/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so \
-    vendor/essential/mata/proprietary/vendor_overlay/lib64/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/lib-imsrcs-v2.so \
-    vendor/essential/mata/proprietary/vendor_overlay/lib64/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/lib-uceservice.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libperfgluelayer.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-iopd-client.so \
     vendor/essential/mata/proprietary/vendor_overlay/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/libqti-perfd-client.so \

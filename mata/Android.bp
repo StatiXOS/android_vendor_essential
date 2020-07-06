@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 The LineageOS Project
+ * Copyright (C) 2019-2020 StatiXOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -115,6 +115,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "WfdService",
+	owner: "essential",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "essential",
 	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
@@ -124,3 +135,10 @@ android_app_import {
 	},
 	privileged: true,
 }
+
+dex_import {
+	name: "WfdCommon",
+	owner: "essential",
+	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+

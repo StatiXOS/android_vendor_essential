@@ -20,6 +20,25 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libantradio",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libantradio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libantradio.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsdm-disp-vndapis",
 	owner: "essential",
 	strip: {

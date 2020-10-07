@@ -115,6 +115,8 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/product/framework/vendor.essential.hardware.sidecar-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.essential.hardware.sidecar-V1.0-java.jar \
     vendor/essential/mata/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
     vendor/essential/mata/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    vendor/essential/mata/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/essential/mata/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/essential/mata/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/essential/mata/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/essential/mata/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
@@ -123,6 +125,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/bin/hbtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hbtp_daemon \
     vendor/essential/mata/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/essential/mata/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.mata:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.mata \
+    vendor/essential/mata/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/essential/mata/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
     vendor/essential/mata/proprietary/vendor/bin/hw/android.hardware.gnss@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@1.0-service-qti \
     vendor/essential/mata/proprietary/vendor/bin/hw/vendor.essential.hardware.sidecar@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.essential.hardware.sidecar@1.0-service \
@@ -146,7 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/essential/mata/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/essential/mata/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
-    vendor/essential/mata/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter \
     vendor/essential/mata/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/essential/mata/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/essential/mata/proprietary/vendor/etc/acdbdata/Mata/Mata_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mata/Mata_Bluetooth_cal.acdb \
@@ -196,6 +198,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/etc/hbtp/loader.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/loader.cfg \
     vendor/essential/mata/proprietary/vendor/etc/hbtp/qtc800s_dsp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800s_dsp.bin \
     vendor/essential/mata/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.mata.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.mata.rc \
+    vendor/essential/mata/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/essential/mata/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
     vendor/essential/mata/proprietary/vendor/etc/init/android.hardware.gnss@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@1.0-service-qti.rc \
     vendor/essential/mata/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
@@ -225,6 +228,8 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/firmware/crnv21.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/crnv21.bin \
     vendor/essential/mata/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
     vendor/essential/mata/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
+    vendor/essential/mata/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
+    vendor/essential/mata/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
     vendor/essential/mata/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.api@1.0.so \
@@ -239,11 +244,17 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/essential/mata/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/essential/mata/proprietary/vendor/lib/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.msm8998.so \
+    vendor/essential/mata/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/essential/mata/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/essential/mata/proprietary/vendor/lib/hw/camera.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8998.so \
+    vendor/essential/mata/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/essential/mata/proprietary/vendor/lib/hw/gatekeeper.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib/hw/keystore.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib/hw/sound_trigger.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib/hw/vendor.essential.hardware.sidecar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.essential.hardware.sidecar@1.0-impl.so \
+    vendor/essential/mata/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
+    vendor/essential/mata/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/essential/mata/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/essential/mata/proprietary/vendor/lib/hw/vulkan.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
     vendor/essential/mata/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
@@ -284,6 +295,9 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/essential/mata/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/essential/mata/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
+    vendor/essential/mata/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
+    vendor/essential/mata/proprietary/vendor/lib/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-hidlclient.so \
+    vendor/essential/mata/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/essential/mata/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/essential/mata/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/essential/mata/proprietary/vendor/lib/libchromatix_csidtg_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_common.so \
@@ -584,7 +598,9 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/essential/mata/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/essential/mata/proprietary/vendor/lib/vendor.essential.hardware.sidecar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.essential.hardware.sidecar@1.0.so \
+    vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0_vendor.so \
+    vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so \
     vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so \
     vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so \
@@ -599,6 +615,8 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so \
     vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
     vendor/essential/mata/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
+    vendor/essential/mata/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/essential/mata/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/essential/mata/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.api@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@1.0.so \
@@ -612,11 +630,17 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib64/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libQTapGLES.so \
     vendor/essential/mata/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/essential/mata/proprietary/vendor/lib64/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.msm8998.so \
+    vendor/essential/mata/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/essential/mata/proprietary/vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@1.0-impl-qti.so \
+    vendor/essential/mata/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
+    vendor/essential/mata/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/essential/mata/proprietary/vendor/lib64/hw/gatekeeper.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib64/hw/keystore.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib64/hw/vendor.essential.hardware.sidecar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.essential.hardware.sidecar@1.0-impl.so \
+    vendor/essential/mata/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
+    vendor/essential/mata/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/essential/mata/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/essential/mata/proprietary/vendor/lib64/hw/vulkan.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msm8998.so \
     vendor/essential/mata/proprietary/vendor/lib64/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-dplmedia.so \
     vendor/essential/mata/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
@@ -660,6 +684,8 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/essential/mata/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/essential/mata/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
+    vendor/essential/mata/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
+    vendor/essential/mata/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/essential/mata/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/essential/mata/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/essential/mata/proprietary/vendor/lib64/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromaflash.so \
@@ -789,7 +815,9 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.display.config@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.0_vendor.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.essential.hardware.sidecar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.essential.hardware.sidecar@1.0.so \
+    vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so \
+    vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so \
     vendor/essential/mata/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so \
@@ -810,6 +838,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
+    libantradio \
     libsdm-disp-vndapis \
     Score \
     embms \

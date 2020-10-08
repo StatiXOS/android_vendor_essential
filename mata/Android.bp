@@ -33,8 +33,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
 		},
 	},
- 	check_elf_files: false,
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -127,6 +127,7 @@ android_app_import {
 	name: "Klik",
 	owner: "essential",
 	apk: "proprietary/priv-app/Klik/Klik.apk",
+	overrides: ["Camera2"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

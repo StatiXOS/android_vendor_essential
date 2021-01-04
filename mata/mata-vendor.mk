@@ -851,7 +851,6 @@ PRODUCT_PACKAGES += \
     Klik \
     WfdService \
     qcrilmsgtunnel \
-    QtiAudioService \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \

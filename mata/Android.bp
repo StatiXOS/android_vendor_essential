@@ -177,17 +177,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QtiAudioService",
-	owner: "essential",
-	apk: "proprietary/vendor/app/QtiAudioService/QtiAudioService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "QtiTelephonyService",
 	owner: "essential",
 	apk: "proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk",

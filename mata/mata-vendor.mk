@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2020 StatiXOS
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -851,7 +851,6 @@ PRODUCT_PACKAGES += \
     Klik \
     WfdService \
     qcrilmsgtunnel \
-    QtiAudioService \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \

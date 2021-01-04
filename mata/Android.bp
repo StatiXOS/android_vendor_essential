@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 StatiXOS
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -174,17 +174,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-}
-
-android_app_import {
-	name: "QtiAudioService",
-	owner: "essential",
-	apk: "proprietary/vendor/app/QtiAudioService/QtiAudioService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
 }
 
 android_app_import {

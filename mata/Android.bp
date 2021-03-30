@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 StatiXOS
+ * Copyright (C) 2019-2021 StatiXOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -230,6 +230,7 @@ prebuilt_etc_xml {
 	name: "ReferenceFeature",
 	owner: "essential",
 	src: "proprietary/vendor/etc/lm/ReferenceFeature.xml",
+	filename_from_src: true,
 	sub_dir: "lm",
 	soc_specific: true,
 }

@@ -212,12 +212,3 @@ dex_import {
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
-prebuilt_etc_xml {
-	name: "ReferenceFeature",
-	owner: "essential",
-	src: "proprietary/vendor/etc/lm/ReferenceFeature.xml",
-	filename_from_src: true,
-	sub_dir: "lm",
-	soc_specific: true,
-}
-

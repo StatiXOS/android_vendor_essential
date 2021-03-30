@@ -831,5 +831,4 @@ PRODUCT_PACKAGES += \
     TimeService \
     datastatusnotification \
     radioconfig \
-    WfdCommon \
-    ReferenceFeature
+    WfdCommon

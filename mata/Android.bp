@@ -38,26 +38,6 @@ cc_prebuilt_library_shared {
 	prefer: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "libsdm-disp-vndapis",
-	owner: "essential",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsdm-disp-vndapis.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
 android_app_import {
 	name: "Score",
 	owner: "essential",

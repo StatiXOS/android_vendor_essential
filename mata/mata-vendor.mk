@@ -10,15 +10,12 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/app/Score/lib/arm64/libcxaudiohidlib_embcb_jni.so \
     vendor/essential/mata/proprietary/app/Score/lib/arm64/libusb1.0.so:$(TARGET_COPY_OUT_SYSTEM)/app/Score/lib/arm64/libusb1.0.so \
     vendor/essential/mata/proprietary/bin/fastboot_target:$(TARGET_COPY_OUT_SYSTEM)/bin/fastboot_target \
-    vendor/essential/mata/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/essential/mata/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
     vendor/essential/mata/proprietary/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/cneapiclient.xml \
     vendor/essential/mata/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.xml \
     vendor/essential/mata/proprietary/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/embms.xml \
     vendor/essential/mata/proprietary/vendor/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
     vendor/essential/mata/proprietary/etc/permissions/vendor-essential-hardware-sidecar.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor-essential-hardware-sidecar.xml \
-    vendor/essential/mata/proprietary/etc/wfdconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfig.xml \
-    vendor/essential/mata/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
     vendor/essential/mata/proprietary/framework/cneapiclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/cneapiclient.jar \
     vendor/essential/mata/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/essential/mata/proprietary/framework/com.quicinc.cne.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.jar \
@@ -43,7 +40,7 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib/libjni_trueportrait.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_trueportrait.so \
     vendor/essential/mata/proprietary/lib/libjni_truescanner_v2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_truescanner_v2.so \
     vendor/essential/mata/proprietary/lib/libjni_ubifocus.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_ubifocus.so \
-    vendor/essential/mata/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
+    vendor/essential/mata/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
     vendor/essential/mata/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
     vendor/essential/mata/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
     vendor/essential/mata/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
@@ -54,21 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/essential/mata/proprietary/lib/libtruescanner.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libtruescanner.so \
     vendor/essential/mata/proprietary/lib/libubifocus.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libubifocus.so \
-    vendor/essential/mata/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
-    vendor/essential/mata/proprietary/lib/libwfdcodecv4l2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcodecv4l2.so \
-    vendor/essential/mata/proprietary/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcommonutils.so \
-    vendor/essential/mata/proprietary/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdconfigutils.so \
-    vendor/essential/mata/proprietary/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmminterface.so \
-    vendor/essential/mata/proprietary/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsink.so \
-    vendor/essential/mata/proprietary/lib/libwfdmmsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsrc.so \
-    vendor/essential/mata/proprietary/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdrtsp.so \
-    vendor/essential/mata/proprietary/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdservice.so \
-    vendor/essential/mata/proprietary/lib/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsm.so \
-    vendor/essential/mata/proprietary/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcinterface.so \
-    vendor/essential/mata/proprietary/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsink.so \
-    vendor/essential/mata/proprietary/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsinkinterface.so \
-    vendor/essential/mata/proprietary/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrc.so \
-    vendor/essential/mata/proprietary/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrcinterface.so \
     vendor/essential/mata/proprietary/lib64/libblurbuster.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libblurbuster.so \
     vendor/essential/mata/proprietary/lib64/libchromaflash.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libchromaflash.so \
     vendor/essential/mata/proprietary/lib64/libclearsight.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libclearsight.so \
@@ -91,14 +73,12 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/lib64/libjni_trueportrait.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_trueportrait.so \
     vendor/essential/mata/proprietary/lib64/libjni_truescanner_v2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_truescanner_v2.so \
     vendor/essential/mata/proprietary/lib64/libjni_ubifocus.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_ubifocus.so \
-    vendor/essential/mata/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
+    vendor/essential/mata/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/essential/mata/proprietary/lib64/liboptizoom.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liboptizoom.so \
     vendor/essential/mata/proprietary/lib64/libseemore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libseemore.so \
     vendor/essential/mata/proprietary/lib64/libtrueportrait.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtrueportrait.so \
     vendor/essential/mata/proprietary/vendor/lib64/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrueportrait.so \
     vendor/essential/mata/proprietary/lib64/libubifocus.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libubifocus.so \
-    vendor/essential/mata/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
-    vendor/essential/mata/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
     vendor/essential/mata/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/essential/mata/proprietary/media/audio/ui/VideoRecord.ogg:$(TARGET_COPY_OUT_SYSTEM)/media/audio/ui/VideoRecord.ogg \
     vendor/essential/mata/proprietary/product/media/audio/ui/VideoRecord.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/VideoRecord.ogg \
@@ -533,11 +513,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/essential/mata/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/essential/mata/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
-    vendor/essential/mata/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
-    vendor/essential/mata/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
-    vendor/essential/mata/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
-    vendor/essential/mata/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
-    vendor/essential/mata/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/essential/mata/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/essential/mata/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
     vendor/essential/mata/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
@@ -787,11 +762,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentTGoogleWCD9335 \
     HotwordEnrollmentXGoogleWCD9335 \
     Klik \
-    WfdService \
     qcrilmsgtunnel \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \
     radioconfig \
-    WfdCommon \
     ReferenceFeature

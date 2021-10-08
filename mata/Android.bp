@@ -112,7 +112,6 @@ android_app_import {
 	name: "Klik",
 	owner: "essential",
 	apk: "proprietary/priv-app/Klik/Klik.apk",
-	overrides: ["Camera2"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

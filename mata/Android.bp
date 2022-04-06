@@ -132,8 +132,8 @@ android_app_import {
 	name: "Klik",
 	owner: "essential",
 	apk: "proprietary/priv-app/Klik/Klik.apk",
-	overrides: ["Camera2"],
 	presigned: true,
+	overrides: ["Camera2"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -195,10 +195,56 @@ android_app_import {
 	soc_specific: true,
 }
 
+dex_import {
+	name: "cneapiclient",
+	owner: "essential",
+	jars: ["proprietary/framework/cneapiclient.jar"],
+}
+
+dex_import {
+	name: "com.quicinc.cne.api-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/framework/com.quicinc.cne.api-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "com.quicinc.cne",
+	owner: "essential",
+	jars: ["proprietary/framework/com.quicinc.cne.jar"],
+}
+
+dex_import {
+	name: "embmslibrary",
+	owner: "essential",
+	jars: ["proprietary/framework/embmslibrary.jar"],
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "essential",
+	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "qti-vzw-ims-internal",
+	owner: "essential",
+	jars: ["proprietary/vendor/framework/qti-vzw-ims-internal.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "vendor.essential.hardware.sidecar-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/product/framework/vendor.essential.hardware.sidecar-V1.0-java.jar"],
+	product_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "ReferenceFeature",
 	owner: "essential",
 	src: "proprietary/vendor/etc/lm/ReferenceFeature.xml",
+	filename_from_src: true,
 	sub_dir: "lm",
 	soc_specific: true,
 }

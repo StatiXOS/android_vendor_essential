@@ -25,6 +25,86 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libdsi_netctrl",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libdsi_netctrl.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdsi_netctrl.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_cci",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_common_so",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmiservices",
+	owner: "essential",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmiservices.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsdm-disp-vndapis",
 	owner: "essential",
 	strip: {
@@ -52,47 +132,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "embms",
-	owner: "essential",
-	apk: "proprietary/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "ims",
-	owner: "essential",
-	apk: "proprietary/app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uceShimService",
-	owner: "essential",
-	apk: "proprietary/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "CNEService",
-	owner: "essential",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 }
 
 android_app_import {
@@ -141,20 +180,31 @@ android_app_import {
 }
 
 android_app_import {
-	name: "qcrilmsgtunnel",
+	name: "CACertService",
 	owner: "essential",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
+	soc_specific: true,
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
+	name: "CneApp",
 	owner: "essential",
-	apk: "proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "IWlanService",
+	owner: "essential",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -174,63 +224,38 @@ android_app_import {
 }
 
 android_app_import {
-	name: "datastatusnotification",
+	name: "QtiTelephonyService",
 	owner: "essential",
-	apk: "proprietary/vendor/app/datastatusnotification/datastatusnotification.apk",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
-	name: "radioconfig",
+	name: "ims",
 	owner: "essential",
-	apk: "proprietary/vendor/app/radioconfig/radioconfig.apk",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	privileged: true,
+	system_ext_specific: true,
 }
 
-dex_import {
-	name: "cneapiclient",
+android_app_import {
+	name: "qcrilmsgtunnel",
 	owner: "essential",
-	jars: ["proprietary/framework/cneapiclient.jar"],
-}
-
-dex_import {
-	name: "com.quicinc.cne.api-V1.0-java",
-	owner: "essential",
-	jars: ["proprietary/framework/com.quicinc.cne.api-V1.0-java.jar"],
-}
-
-dex_import {
-	name: "com.quicinc.cne",
-	owner: "essential",
-	jars: ["proprietary/framework/com.quicinc.cne.jar"],
-}
-
-dex_import {
-	name: "embmslibrary",
-	owner: "essential",
-	jars: ["proprietary/framework/embmslibrary.jar"],
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "essential",
-	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
-	soc_specific: true,
-}
-
-dex_import {
-	name: "qti-vzw-ims-internal",
-	owner: "essential",
-	jars: ["proprietary/vendor/framework/qti-vzw-ims-internal.jar"],
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -238,6 +263,181 @@ dex_import {
 	owner: "essential",
 	jars: ["proprietary/product/framework/vendor.essential.hardware.sidecar-V1.0-java.jar"],
 	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.2-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.3-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.1-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.2-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.3-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.slm-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.1-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.factory-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "essential",
+	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 prebuilt_etc_xml {

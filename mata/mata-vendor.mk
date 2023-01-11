@@ -147,7 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/essential/mata/proprietary/vendor/bin/sensors.qcom:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qcom \
     vendor/essential/mata/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/essential/mata/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
-    vendor/essential/mata/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/essential/mata/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/essential/mata/proprietary/vendor/etc/acdbdata/Mata/Mata_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mata/Mata_Bluetooth_cal.acdb \
     vendor/essential/mata/proprietary/vendor/etc/acdbdata/Mata/Mata_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Mata/Mata_General_cal.acdb \
@@ -927,7 +926,6 @@ PRODUCT_PACKAGES += \
     CACertService \
     CneApp \
     IWlanService \
-    TimeService \
     QtiTelephonyService \
     ims \
     qcrilmsgtunnel \
